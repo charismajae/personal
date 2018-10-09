@@ -3,7 +3,7 @@
     <div v-if="showMe">
       <Backbar title="订单"></Backbar>
       <div class="order_box">
-        <div v-for=" (item, index) in  getFalseOrder" class="order_one">
+        <div v-for=" (item, index) in  getFalseOrder" :key="index" class="order_one">
           <div class="order_img">
             <img src="../images/shop-logo.png" alt="">
           </div>
